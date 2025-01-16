@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de contacto</h2>
+        <p>Todos los campos deben contener asteriscos(*)</p>
+        <br/>
+        <form action="#" method="post">
+
+            <!--Seccion de arriba-->
+            <div class="form-row">
+
+                <!--Nombre-->
+                <div class="form-group">
+                    <label for="nombre">Nombre*</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="20" placeholder="Ingresa tu nombre...">
+                </div> 
+
+                    <!--Email-->
+                    <div class="form-group">
+                        <label for="correo">Correo Electronico*</label>
+                        <input type="email" id="correo" name="correo" required placeholder="Ingresa tu correo...">
+                    </div> 
+
+                    <!--Asunto-->
+                  <div class="form-group">
+                    <label for="asunto">Asunto*</label>
+                    <input type="text" id="asunto" name="asunto" required minlength="5" maxlength="50" placeholder="Ingresa tu peticion...">
+                    </div>
+
+                    <!--Mensaje-->
+                    <div class="form-message">
+                        <label for="mensaje">Mensaje*</label>
+                        <textarea name="mensaje" id="mensaje" cols="100" rows="10" required placeholder="Ingresa tu mensaje..."></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                  </div>      
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
